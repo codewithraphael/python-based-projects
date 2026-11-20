@@ -15,18 +15,21 @@ while True:
                 print('Invalid choice. Please try again.')
                 continue
 
-            if  (user == 'rock' and computer == 'scissors') or \
-                (user == 'paper' and computer == 'rock') or \
-                (user == 'scissors' and computer == 'paper'):
+            if (
+                (user == 'rock' and computer == 'scissors')
+                or (user == 'paper' and computer == 'rock')
+                or (user == 'scissors' and computer == 'paper')
+            ):
 
                 print(f'You chose {user}, computer chose {computer}. You win!'  )
-                break
 
             elif user == computer:
                 print(f'You chose {user}, computer chose {computer}. It\'s a tie!')
 
             else:
                 print(f'You chose {user}, computer chose {computer}. You lose!')
+
+            break
 
         except ValueError as e:
             print(f'Error: {e}')
