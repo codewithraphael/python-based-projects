@@ -40,3 +40,5 @@ if suggestion in ['yes', 'y']:
             wrong += 1
 
     print(f'You got {count} correct and {wrong} wrong.')
+else:
+    quit()
